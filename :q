@@ -1,0 +1,29 @@
+class HomeController < ApplicationController
+	def index
+		api = API.new
+		response = api.getCourses
+		#unless response
+			@courses = JSON.parse(response.body)
+			@links = parseLinks(response.headers['Link'])
+  		#else
+			#redirect to some error page
+		#end
+  	end
+	def show
+		api = API.new
+		response = api.getCourse(params[:id])
+		unless(response.nil?)
+	  		@course = JSON.parse(response.body)
+		else
+			#redirect to some error page
+		end  
+	end
+	def page
+		response = API.getCoursePage(params[:page], )
+		unless(response.nil?)
+		else
+			#redirect to some error page
+		end
+	end
+
+end

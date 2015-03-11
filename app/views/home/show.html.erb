@@ -7,5 +7,7 @@
 <p>
 	<%=@course["description"]%>
 </p>
-
+<p>
+	<%= link_to "Enroll", home_path(@course["id"], '/enrollments') %>
+</p>
 </div>

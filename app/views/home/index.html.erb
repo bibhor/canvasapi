@@ -1,15 +1,16 @@
 <ul>
-	
 <% @links.each do |link| %>
 	<li>
-		<a href="/home/page/<%=link[0]%>/per_page/<%=link[1]%>"><%=link[2] %></a>
+		<%= link_to link[2], '/home/page/'+link[0]+'/per_page/'+link[1] %>
 	</li>
 <% end %>
 </ul>
 <ul>
 <% @courses.each do |course| %>
 	<li>
-		<div><a href="/home/course/<%=course["id"]%>"><%= course["name"] %></a></div>
+		<div>
+			<%= link_to course["name"], home_path(course["id"]) %>
+		</div>
 		<div><%= course["description"] %></div>
 		<hr/>
 	</li>
