@@ -1,28 +1,27 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple implementation of the API described http://canvas-api.herokuapp.com/.
 
-Things you may want to cover:
+Things to look for:
 
-* Ruby version
+* app/controller/home_controller
 
-* System dependencies
+* app/views/home
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* lib/api.rb
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Things that have been completed
+* Tested in development mode
+* Authentication 
+* Courses
+** url to see course http://host:3000/home/1
+** url to see all courses http://host:3000/home or http://host
+** url to navigate for more courses http://host:3000/home/page/1/per_page/2 
+
+Things almost complete
+* Enrollments
+** url to enroll http://host:3000/home/1/enrollments
+
+Things not done
+* no tests have been written so far
