@@ -15,13 +15,13 @@ Things that have been completed
 * Tested in development mode
 * Authentication 
 * Courses
-** url to see course http://host:3000/home/1
-** url to see all courses http://host:3000/home or http://host
-** url to navigate for more courses http://host:3000/home/page/1/per_page/2 
+* url to see course http://host:3000/home/1
+* url to see all courses http://host:3000/home or http://host
+* url to navigate for more courses http://host:3000/home/page/1/per_page/2 
 
 Things almost complete
 * Enrollments
-** url to enroll http://host:3000/home/1/enrollments
+* url to enroll http://host:3000/home/1/enrollments
 
 Things not done
 * no tests have been written so far
